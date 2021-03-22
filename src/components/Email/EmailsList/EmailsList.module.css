@@ -1,4 +1,18 @@
 .EmailsList {
-    background: red;
     width: 100%;
+}
+
+.EmailsList ul {
+
+}
+
+.EmailsList ul li {
+    padding: 0.4em;
+    background: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.EmailsList ul li:hover {
+    cursor: pointer;
+    background: rgb(211, 211, 211);
 }

@@ -8,19 +8,19 @@ function EmailCard (props) {
     return(
         <div className={classes.EmailCard}>
             <header>
-                <div>
+                <p>From: Miroslav Yosifov</p>
+                {/* <div>
                     <p>From:</p>
                     <p>Ivan iavanov</p>
-                </div>
-               
-                <div>
+                </div> */}
+                {/* <div>
                     <p>Include:</p>
                     <ul>
                         <li>MiroslavYosifov</li>
                         <li>AtanasYordanov</li>
                         <li>NaskoAtanasov</li>
                     </ul>
-                </div>
+                </div> */}
             </header>
             <main>
                 <p>Lorem ispusm orem ispusm  orem ispusm orem ispusm  orem ispusm</p>

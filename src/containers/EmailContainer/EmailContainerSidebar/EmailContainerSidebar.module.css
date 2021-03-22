@@ -1,5 +1,50 @@
 .EmailContainerSidebar {
-    background: rgb(62, 63, 114);
+    background: white;
+    /* background: blue; */
     width: 10%;
-    height: 96vh;
+    height: 94vh;
+    border-right: 1px solid lightgrey;
+}
+
+.EmailContainerSidebar nav {
+    width: 100%;
+}
+
+.EmailContainerSidebar nav ul {
+    width: 100%;
+    padding-top: 2em;
+}
+
+.EmailContainerSidebar nav ul li {
+    width: 100%;
+}
+
+.EmailContainerSidebar nav ul a {
+    display: block;
+    width: 100%;
+    padding: 0.2em 2em;
+    color: gray;
+    background: white;
+    font-size: 18px;
+}
+
+.EmailContainerSidebar nav ul li a:hover {
+    color: white;
+    background: gray;
+}
+
+.NewMessageButton {
+    display: block;
+    width: 100%;
+    background: rgb(48, 105, 228);
+    height: 3em;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+
+.NewMessageButton p {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 20px;
 }

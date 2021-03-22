@@ -1,6 +1,6 @@
 .EmailListContainer {
-    background: rgb(179, 176, 176);
     width: 25%;
+    border-right: 1px solid gray;
 }
 
 .EmailListContainer main {
@@ -10,6 +10,20 @@
 }
 
 .ListEmails {
-    max-height: calc(96vh - 2.6em);
+    max-height: calc(94vh - 3em);
     overflow-y: scroll;
+    /* padding: 0.8em; */
+}
+
+::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+::-webkit-scrollbar-track {
+  background: gray; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(180, 180, 180);/* color of the scroll thumb */
+  /* border-radius: 0.2em;  */
 }

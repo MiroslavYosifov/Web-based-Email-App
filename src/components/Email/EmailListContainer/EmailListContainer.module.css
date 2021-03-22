@@ -1,0 +1,15 @@
+.EmailListContainer {
+    background: rgb(179, 176, 176);
+    width: 25%;
+}
+
+.EmailListContainer main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ListEmails {
+    max-height: calc(96vh - 2.6em);
+    overflow-y: scroll;
+}

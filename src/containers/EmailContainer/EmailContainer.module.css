@@ -1,3 +1,8 @@
 .EmailContainer {
-    background: blue;
+    background: rgb(107, 107, 107);
+    min-height: 100vh;
+}
+
+.EmailContainer main {
+    display: flex;
 }

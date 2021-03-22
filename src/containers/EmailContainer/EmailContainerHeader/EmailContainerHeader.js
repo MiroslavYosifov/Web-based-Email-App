@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 function EmailContainerHeader(props) { 
 
     return(
-        <header className={classes.EmailContainerHeader}>
+        <div className={classes.EmailContainerHeader}>
             <h2>EmailHeader</h2>
-        </header>)
+        </div>)
 }
 
 export default EmailContainerHeader;

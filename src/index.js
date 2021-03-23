@@ -11,9 +11,11 @@ import './index.css';
 import App from './App';
 
 import authReducer from './store/reducers/auth/auth';
+import emailReducer from './store/reducers/email/email';
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  email: emailReducer
   // food: foodReducer,
   // foodCompare: foodCompareReducer,
   // cart: cartReducer

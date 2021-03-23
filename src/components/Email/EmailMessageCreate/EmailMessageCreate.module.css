@@ -1,10 +1,15 @@
 .EmailMessageCreate {
+    position: relative;
     width: 100%;
     background: white;
     margin: 0 auto;
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 0.2em;
+    border: 1px solid lightgray;
+}
+
+.EmailMessageCreate:hover {
     box-shadow: 0.1em 0.1em 0.4em 0.2em rgb(196, 196, 196);
 }
 
@@ -16,11 +21,16 @@
 .EmailMessageCreate p input {
     width: 100%;
     border: 1px solid lightgray;
-    padding: 0.2em;
+    padding: 0.4em;
+    border-radius: 0.2em;
    
 }
 
-.EmailMessageCreate form > div button {
+.EmailMessageCreate form > div {
+    margin-top: 1em;
+}
+
+.EmailMessageCreate form > div > button {
     padding: 0.4em 0.6em;
     margin-left: 0.4em;
     border: none;
@@ -31,6 +41,40 @@
     font-size: 16px;
 }
 
+.EmailMessageCreate form > div > div > div {
+    background: white;
+    padding: 0.2em;
+    border: 1px solid lightgray;
+}
+
+.EmailMessageCreate form > div > div > div > button {
+    padding: 0.4em 0.6em;
+    margin-left: 0.4em;
+    border: none;
+    cursor: pointer;
+    background: rgb(48, 105, 228);
+    border-radius: 0.2em;
+    color: white;
+    font-size: 16px;
+}
+
+.EmailMessageCreate form > div .Cancel,
+.EmailMessageCreate form > div .Schedule {
+    background: gray;
+}
+
 .EmailMessageCreate form > div button:first-child {
     margin: 0;
+}
+
+.Calendar {
+    margin: 0;
+    position: absolute;
+    padding: 2em;
+    background: lightgray;
+    top: 84%; left: 16%;
+}
+
+.Calendar div {
+    margin: 0 auto;
 }

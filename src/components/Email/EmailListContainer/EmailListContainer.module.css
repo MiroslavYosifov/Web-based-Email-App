@@ -1,6 +1,7 @@
 .EmailListContainer {
     width: 25%;
     border-right: 1px solid gray;
+    background: rgb(240, 240, 240);
 }
 
 .EmailListContainer main {
@@ -11,6 +12,7 @@
 
 .ListEmails {
     max-height: calc(94vh - 3em);
+    width: 100%;
     overflow-y: scroll;
     /* padding: 0.8em; */
 }

@@ -7,29 +7,33 @@ import EmailCard from '../EmailCard/EmailCard';
 
 function EmailsList (props) { 
 
+    const [emails, setEmailsData] = useState({ data: [] });
+
+    useEffect(() => {
+        if(emails.data !== props.emails) {
+            setEmailsData({ data: props.emails });
+        }
+    });
+
+    const emailsList = emails.data ? emails.data.map(email =>  (
+        <li>
+            <EmailCard 
+                id={email.id} 
+                title={email.title} 
+                isSeen={email.isSeen} 
+                status={email.status} 
+                kind={email.kind} 
+                creator={email.creator}
+                participants={email.participants}
+                content={email.content}
+                parent="emails-list" />
+        </li>
+    )) : '';
+
     return(
         <div className={classes.EmailsList}>
             <ul>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
-                <li><EmailCard/></li>
+                {emailsList}
             </ul>
             
         </div>)

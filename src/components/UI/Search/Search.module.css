@@ -1,5 +1,7 @@
 .Search {
     width: 25%;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.2em 0.1em rgb(230, 229, 229);
 }
 
 .Search form div {

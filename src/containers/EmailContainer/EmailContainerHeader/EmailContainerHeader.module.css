@@ -18,11 +18,19 @@
 }
 
 .EmailContainerHeader nav ul li {
+    margin-left: 0.6em;
+    padding: 0.5em;
+    
+}
 
+.EmailContainerHeader nav ul li:first-child {
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+    box-shadow: 0.1em 0.1em 0.2em 0.1em rgb(230, 229, 229);
 }
 
 .EmailContainerHeader nav ul li span {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import classes from './EmailMessageCreate.module.css';
 
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
@@ -12,6 +14,13 @@ const editorStyle = {
 };
 
 function EmailMessageCreate (props) { 
+
+    const [value, onChange] = useState(new Date());
+
+    useEffect(() => {
+        console.log(value);
+    });
+    
     return(
         <div className={classes.EmailMessageCreate}>
             <form>
@@ -29,9 +38,22 @@ function EmailMessageCreate (props) {
                         editorStyle={editorStyle}
                     />
                 </p>
+                {/* <div className={classes.Calendar}>
+                    <div>
+                        <Calendar
+                          onChange={onChange}
+                          value={value}
+                        />
+                        <div>
+                            <button className="SendButton" type="submit">Send</button>
+                            <button className={classes.Cancel} type="submit">Cancel</button>
+                        </div>  
+                    </div> 
+                </div> */}
                 <div>
-                    <button className="PostButton" type="submit">Send</button>
-                    <button className="PostButton" type="submit">Shedule Send</button>
+                    <button className="SendButton" type="submit">Send</button>
+                    <button className={classes.Schedule} type="submit">Schedule Send</button>
+                    <button className={classes.Cancel} type="submit">Cancel</button>
                 </div>  
             </form>
         </div>)

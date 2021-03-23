@@ -1,5 +1,5 @@
 .Search {
-    width: 30em;
+    width: 25%;
 }
 
 .Search form div {
@@ -14,8 +14,8 @@
     align-items: center;
     margin-left: auto;
     background: rgb(150, 150, 150);
-    border-bottom-left-radius: 0.1em;
-    border-top-left-radius: 0.1em;
+    border-bottom-right-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 }
 
 .Search form div label i {
@@ -28,8 +28,11 @@
     width: 100%;
     margin-right: auto;
     padding: 0.2em 0.6em;
-    background: lightgrey;
-    border: none;
+    background: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    border-right: none;
+    border-bottom-left-radius: 0.3em;
+    border-top-left-radius: 0.3em;
 }
 
 .Search form div input:focus {

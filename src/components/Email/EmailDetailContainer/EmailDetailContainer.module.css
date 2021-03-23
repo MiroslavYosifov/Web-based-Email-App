@@ -1,6 +1,18 @@
 .EmailDetailContainer {
-   min-width: 65%;
-   background: rgb(255, 255, 255);
-   max-height: 96vh;
+   padding: 2em;
+   width: 65%;
+   background: rgb(245, 245, 245);
+   max-height: 94vh;
+   overflow-y: scroll;
+}
+
+.EmailDetailContainer ul {
+
+}
+
+.EmailDetailContainer ul  li {
+   background: white;
+   border: 1px solid lightgray;
+   padding: 0.4em;
 }
 

@@ -9,8 +9,14 @@ function EmailContainerHeader(props) {
 
     return(
         <div className={classes.EmailContainerHeader}>
-             <Search/>
-            <h2>EmailHeader</h2>
+            <h3 className={classes.AppTittle}>Email APP</h3>
+            <Search/>
+            <nav>
+                <ul>
+                    <li><span><i class="fas fa-bell"></i> Downtimes</span></li>
+                </ul>
+            </nav>
+            
         </div>)
 }
 

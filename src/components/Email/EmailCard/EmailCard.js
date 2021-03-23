@@ -7,7 +7,10 @@ function EmailCard (props) {
 
     return(
         <div className={classes.EmailCard}>
-            <header>
+            <section>
+                <h5>Title: ABotu fkwerjfjewhfjewfew</h5>
+            </section>
+            <section>
                 <p>From: Miroslav Yosifov</p>
                 {/* <div>
                     <p>From:</p>
@@ -21,10 +24,11 @@ function EmailCard (props) {
                         <li>NaskoAtanasov</li>
                     </ul>
                 </div> */}
-            </header>
-            <main>
+            </section>
+            
+            <section>
                 <p>Lorem ispusm orem ispusm  orem ispusm orem ispusm  orem ispusm</p>
-            </main>
+            </section>
         </div>)
 }
 

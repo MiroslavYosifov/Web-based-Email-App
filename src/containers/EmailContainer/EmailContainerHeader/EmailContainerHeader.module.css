@@ -7,3 +7,29 @@
     background: white;
     border-bottom: 1px solid lightgrey;
 }
+
+.EmailContainerHeader nav {
+    margin-left: auto;
+    padding: 0 3em;
+}
+
+.EmailContainerHeader nav ul {
+    display: flex;
+}
+
+.EmailContainerHeader nav ul li {
+
+}
+
+.EmailContainerHeader nav ul li span {
+    font-size: 20px;
+}
+
+
+.EmailContainerHeader nav ul li span:hover {
+    cursor: pointer;
+}
+
+.AppTittle {
+    width: 10%;
+}

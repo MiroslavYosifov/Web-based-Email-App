@@ -45,9 +45,11 @@ function EmailCard (props) {
                 <div className={classes.EmailCardDetails}>
                     <section>
                         <section className={classes.EmailCardParticipantsWrapper}>
+
                             <section className={classes.EmailCardDetailsTitle}>
                                 <h5>Subject: {props.title}</h5>
                             </section>
+
                             <section className={classes.EmailCardDetailsHeader}>
                                  <h5>From: {props.creator.name}</h5>
                                  <p>{props.date}</p>
@@ -59,9 +61,9 @@ function EmailCard (props) {
                                     {participants}
                                 </ul>
                             </section>
+
                         </section>
                        
-
                         <section>
                             <p>{props.content}</p>
                         </section>
@@ -69,8 +71,8 @@ function EmailCard (props) {
                         {!props.isReplying && <section>
                             <button onClick={() => props.onChangeReplyMessageFormStatus()} className={classes.ReplyButton}>Reply</button>
                         </section>}
-
                     </section>
+                    
                     <section>
                         <EmailCardHistory 
                             emailHistory={props.emailHistory} 

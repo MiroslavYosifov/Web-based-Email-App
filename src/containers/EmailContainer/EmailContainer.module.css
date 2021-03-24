@@ -1,5 +1,5 @@
 .EmailContainer {
-    background: red;
+    background: var(--site-color-basic-background);
     min-height: 100vh;
 }
 

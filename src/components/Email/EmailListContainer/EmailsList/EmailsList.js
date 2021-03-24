@@ -41,7 +41,6 @@ function EmailsList (props) {
 
         setFilteredEmailsData({  data: filteredData });
         setEmailsData({ data: filteredData });
-       
     }, [props.status]);
 
     useEffect(() => {
@@ -54,7 +53,6 @@ function EmailsList (props) {
         }
 
         setFilteredEmailsData({  data: filteredData });
-        
     }, [props.filterDowntime]);
 
     useEffect(() => {
@@ -67,6 +65,7 @@ function EmailsList (props) {
                                             || e.kind.toUpperCase().includes(props.searchParams.toUpperCase()));
             setFilteredEmailsData({  data: filteredData });
         }
+        
     }, [props.searchParams]);
 
     function onEmailSelect(id) {

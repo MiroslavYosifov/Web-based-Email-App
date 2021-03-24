@@ -1,7 +1,7 @@
 .EmailListContainer {
     width: 25%;
-    border-right: 1px solid gray;
-    background: rgb(240, 240, 240);
+    border-right: 1px solid var(--site-color-border-basic);
+    background: var(--site-color-third-background);
 }
 
 .EmailListContainer main {
@@ -22,10 +22,9 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: gray; /* color of the tracking area */
+  background: gray;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(180, 180, 180);/* color of the scroll thumb */
-  /* border-radius: 0.2em;  */
+  background-color: rgb(180, 180, 180);
 }

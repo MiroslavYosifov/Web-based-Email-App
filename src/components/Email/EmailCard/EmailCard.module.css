@@ -1,14 +1,6 @@
 .EmailCard {
-    /* margin-bottom: 0.8em; */
-    /* border-radius: 1em; */
-  
-    /* box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(190, 190, 190); */
     width: 100%;
     padding: 0.4em;
-}
-
-.EmailCard .EmailCardDetailsIssue {
-
 }
 
 .EmailCard .EmailCardDetailsIssue span {
@@ -50,8 +42,7 @@
 }
 
 .EmailCardParticipantsWrapper section {
-    border-bottom: 1px solid lightgray;
-    /* background: rgb(240, 240, 240); */
+    border-bottom: 1px solid var(--site-color-border-basic);
     margin: 0;
 }
 
@@ -72,7 +63,7 @@
 .EmailCardDetailsParticipants > ul > li {
     margin-left: 0.4em;
     padding: 0.2em 1em; 
-    background: rgb(240, 240, 240);
+    background: var(--site-color-third-background);
     border-radius: 0.2em;
     cursor: pointer;
 }
@@ -101,10 +92,6 @@
 
 }
 
-/* .EmailCardDetailsHeader > h5 {
-    font-size: 18px;
-} */
-
 .EmailCardDetailsHeader > p {
     margin-left: auto;
     font-style: italic;
@@ -113,17 +100,15 @@
 .ReplyButton {
     cursor: pointer;
     padding: 0.4em 2em;
-    background: rgb(48, 105, 228);
+    background: var(--site-color-basic-details-background);
     border-radius: 0.3em;
     font-weight: bold;
-    color: white;
+    color: var(--text-color-fourth);
     font-size: 14px;
     border: none;
-    /* border: 1px solid lightgray;
-    box-shadow: 0.1em 0.1em 0.2em 0.1em rgb(206, 206, 206); */
 }
 
 .SheduledDate {
-    color: rgb(23, 116, 223);
+    color: var(--site-color-basic-details-background);
     font-weight: bold;
 }

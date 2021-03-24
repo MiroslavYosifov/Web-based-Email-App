@@ -20,8 +20,8 @@ function EmailContainerSidebar (props) {
             </div>
             <nav>
                 <ul>
-                    <li><NavLink exact={true} activeClassName={ classes.Active } to="/inbox"><span><i class="fas fa-inbox"></i> Inbox</span> </NavLink></li>
-                    <li><NavLink exact={true} activeClassName={ classes.Active } to="/Sent"><span><i class="fas fa-paper-plane"></i> Sent</span></NavLink></li>
+                    <li><NavLink exact={true} activeClassName={ classes.Active } to="/"><span><i class="fas fa-inbox"></i> Inbox</span> </NavLink></li>
+                    <li><NavLink exact={true} activeClassName={ classes.Active } to="/sent"><span><i class="fas fa-paper-plane"></i> Sent</span></NavLink></li>
                     <li><NavLink exact={true} activeClassName={ classes.Active } to="/scheduled"><span><i class="far fa-calendar-alt"></i> Scheduled</span></NavLink></li>
                 </ul>
             </nav>

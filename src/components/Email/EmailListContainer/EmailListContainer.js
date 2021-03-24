@@ -23,9 +23,9 @@ function EmailListContainer (props) {
                 <EmailsFilter updateFilterOptions={updateFilterOptions} />
                 <div className={classes.ListEmails}>
                     <Switch>
-                        <Route path="/inbox" render={() => <EmailsList status="inbox" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
                         <Route path="/sent" render={() => <EmailsList status="sent" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
                         <Route path="/scheduled" render={() => <EmailsList status="scheduled" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
+                        <Route path="/" render={() => <EmailsList status="inbox" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
                         <Route render={() => <h1>Not found</h1>} ></Route>
                     </Switch>
                 </div>

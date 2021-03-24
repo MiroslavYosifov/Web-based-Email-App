@@ -15,14 +15,14 @@
     padding: 0.4em;
     align-items: center;
     margin-left: auto;
-    background: rgb(150, 150, 150);
+    background: var(--site-color-secondary-details-background);
     border-bottom-right-radius: 0.3em;
     border-top-right-radius: 0.3em;
 }
 
 .Search form div label i {
     font-size: 30px;
-    color: white;
+    color: var(--text-color-fourth);
     display: block;
 }
 
@@ -30,8 +30,8 @@
     width: 100%;
     margin-right: auto;
     padding: 0.2em 0.6em;
-    background: rgb(255, 255, 255);
-    border: 1px solid lightgray;
+    background: var(--site-color-basic-background);
+    border: 1px solid var(--site-color-border-basic);
     border-right: none;
     border-bottom-left-radius: 0.3em;
     border-top-left-radius: 0.3em;

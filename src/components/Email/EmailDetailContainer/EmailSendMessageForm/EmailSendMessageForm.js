@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import classes from './EmailSendMessageForm.module.css';
 
-// import Datetime from 'react-datetime';
-
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+
+import DateTimePicker from '../../../UI/DateTimePicker/DateTimePicker';
 
 import { connect } from 'react-redux';
 import { changeFormStatus } from '../../../../store/actions/';
@@ -19,15 +19,10 @@ const editorStyle = {
 function EmailSendMessageForm (props) { 
 
     const [value, onChange] = useState(new Date());
-    const [calendar, setCalendarOptions] = useState({ isShowed: false });
-
-    useEffect(() => {
-        console.log(value);
-    });
+    const [dateTimePicker, setdDateTimePickerOptions] = useState({ isShowed: false });
 
     function handleCancel(e) {
         e.preventDefault();
-        console.log(props);
         props.onChangeEmailSendMessageFromStatus(!props.isShowedSendMessageForm);
     }
 
@@ -37,12 +32,12 @@ function EmailSendMessageForm (props) {
 
     function handleSchedule(e) {
         e.preventDefault();
-        setCalendarOptions({ isShowed: !calendar.isShowed })
+        setdDateTimePickerOptions({ isShowed: !dateTimePicker.isShowed })
     }
 
     function handleCancelShedule(e) {
         e.preventDefault();
-        setCalendarOptions({ isShowed: !calendar.isShowed })
+        setdDateTimePickerOptions({ isShowed: !dateTimePicker.isShowed })
     }
 
     function handleSheduleCalendar(e) {
@@ -54,6 +49,7 @@ function EmailSendMessageForm (props) {
             <header>
                 <h3>New Mail</h3>
             </header>
+            
             <form>
                 <p>
                     <input type="text" id="title" placeholder="To"/>
@@ -69,31 +65,22 @@ function EmailSendMessageForm (props) {
                         editorStyle={editorStyle}
                     />
                 </p>
-                {calendar.isShowed && <div className={classes.Calendar}>
+
+                {dateTimePicker.isShowed && <div className={classes.DateTimePickerWrapper}>
                     <div>
+                        <DateTimePicker />
                         <div>
-                            <button onClick={(event) => handleSheduleCalendar(event)} className="SendButton" type="submit">Send</button>
+                            <button onClick={(event) => handleSheduleCalendar(event)} className="SendButton" type="submit">Schedule Send</button>
                             <button onClick={(event) => handleCancelShedule(event)} className={classes.Cancel} className={classes.Cancel} type="submit">Cancel</button>
-                        </div>
+                        </div>  
                     </div> 
                 </div>}
-                {/* {calendar.isShowed && <div className={classes.Calendar}>
-                    <div>
-                        <Calendar
-                          onChange={onChange}
-                          value={value}
-                        />
-                        <div>
-                            <button onClick={(event) => handleSheduleCalendar(event)} className="SendButton" type="submit">Send</button>
-                            <button onClick={(event) => handleCancelShedule(event)} className={classes.Cancel} className={classes.Cancel} type="submit">Cancel</button>
-                        </div>
-                    </div> 
-                </div>} */}
-                <div>
+
+                {!dateTimePicker.isShowed && <div>
                     <button onClick={(event) => handleSend(event)} className="SendButton" type="submit">Send</button>
-                    <button onClick={(event) => handleSchedule(event)} className={classes.Schedule} type="submit">Schedule Send</button>
+                    <button onClick={(event) => handleSchedule(event)} className={classes.Schedule} type="submit">Schedule</button>
                     <button onClick={(event) => handleCancel(event)} className={classes.Cancel} type="submit">Cancel</button>
-                </div>  
+                </div>}
             </form>
         </div>)
 }

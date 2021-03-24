@@ -33,7 +33,13 @@ function EmailDetailContainer (props) {
     return(
         <div className={classes.EmailDetailContainer}>
             {emailSendMessageForm.isShowed && <EmailSendMessageForm/>}
-            {emailReplyMessageForm.isShowed && !emailSendMessageForm.isShowed && <EmailReplyMessageForm participants={email.data.participants} onChangeReplyMessageFormStatus={onChangeReplyMessageFormStatus} />}
+
+            {emailReplyMessageForm.isShowed && !emailSendMessageForm.isShowed && 
+                <EmailReplyMessageForm 
+                    participants={email.data.participants} 
+                    onChangeReplyMessageFormStatus={onChangeReplyMessageFormStatus}
+                />}
+
             {!emailSendMessageForm.isShowed && 
                 <div className={classes.EmailMessageContainer}>
                 { email.data.creator &&

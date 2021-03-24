@@ -21,10 +21,6 @@ function EmailSendMessageForm (props) {
     const [value, onChange] = useState(new Date());
     const [dateTimePicker, setdDateTimePickerOptions] = useState({ isShowed: false });
 
-    useEffect(() => {
-        console.log(value);
-    });
-
     function handleCancel(e) {
         e.preventDefault();
         props.onChangeReplyMessageFormStatus();
@@ -59,16 +55,19 @@ function EmailSendMessageForm (props) {
             <header>
                 <h3>Reply</h3>
             </header>
+
             <form>
                 <p>
                     <input type="text" id="title" placeholder="Subject"/>
                 </p>
+
                 <section>
                     <ul>
                         {participants}
                     </ul>
                     <input type="text" id="title" placeholder="To"/>
                 </section>
+
                 <p>
                     <Editor
                         wrapperClassName="wrapper-class"
@@ -77,6 +76,7 @@ function EmailSendMessageForm (props) {
                         editorStyle={editorStyle}
                     />
                 </p>
+
                 {dateTimePicker.isShowed && <div className={classes.DateTimePickerWrapper}>
                     <div>
                         <DateTimePicker />
@@ -86,6 +86,7 @@ function EmailSendMessageForm (props) {
                         </div>  
                     </div> 
                 </div>}
+                
                 {!dateTimePicker.isShowed && <div>
                     <button onClick={(event) => handleSend(event)} className="SendButton" type="submit">Send</button>
                     <button onClick={(event) => handleSchedule(event)} className={classes.Schedule} type="submit">Schedule</button>

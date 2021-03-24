@@ -12,7 +12,7 @@ function EmailCardHistory (props) {
 
     function strechContent (event) {
         if(event.currentTarget.getElementsByTagName('p')[2].style.display === 'block') {
-            
+
             event.currentTarget.getElementsByTagName('p')[1].style.display = 'block';
             event.currentTarget.getElementsByTagName('p')[2].style.display = 'none'
         } 
@@ -25,11 +25,12 @@ function EmailCardHistory (props) {
     const listEmailHistory = email.emailHistory ? email.emailHistory.map((element, index) =>  (
         <li key={index} onClick={(event) => {strechContent(event)}}>
             <section>
+
                 <header>
                     <h6>{element.creator.name}</h6>
                     <p>{element.date}</p>
                 </header>
-                {/* <h5>Participants {email.creator}</h5> */}
+
                 <p className={classes.CompressedEmailHistoryContent}>{`${element.content.slice(0, 100).trim()}...`}</p>
                 <p className={classes.Disabled}>{`${element.content}`}</p>
             </section>
@@ -38,9 +39,11 @@ function EmailCardHistory (props) {
 
     return(
         <div className={classes.EmailCardHistory}>
+
             <header>
                 <h4>History</h4>
             </header>
+            
             <ul>
                {listEmailHistory}
             </ul>

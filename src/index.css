@@ -1,3 +1,32 @@
+:root {
+    /* --font-size-body-smaller: 10px;
+    --font-size-body-small: 10px;
+    --font-size-body-mid: 12px;
+    --font-size-body-larger: 13px;
+    --font-size-body-big: 14px;
+    --font-size-body-huge: 22px; */
+
+    --site-color-basic-background: rgb(255, 255, 255);
+    --site-color-secondary-background: rgb(245, 245, 245);
+    --site-color-third-background: rgb(240, 240, 240);
+
+    --site-color-basic-details-background: rgb(48, 105, 228); 
+    --site-color-secondary-details-background: rgb(163, 163, 163);
+    --site-color-third-details-background: rgb(235, 235, 235);
+
+    --site-color-border-basic: lightgray;
+   
+    --site-hover-color-basic-backgorund: rgb(200, 200, 200);
+    --site-hover-color-secondary-backgorund: rgb(128, 128, 128);
+
+    --text-color-basic: rgb(0, 0 ,0);
+    --text-color-secondary: rgb(70, 70, 70);
+    --text-color-third: gray;
+    --text-color-fourth: white; 
+
+    --main-layout-width: 100vw;
+}
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -10,7 +39,6 @@ html {
 }
 
 body {
-    background: var(--main-layout-background-color);
     max-width: var(--main-layout-width);
 }
 
@@ -23,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.01em;
     font-weight: 100;
     font-family: sans-serif;
-    color: rgb(70, 70, 70);
+    color: var(--text-color-secondary)
 }
 
 h1 { font-size: 2.4em; }
@@ -39,12 +67,4 @@ a {
 
 li {
     list-style: none;
-}
-
-p {
-
-}
-
-label {
-
 }

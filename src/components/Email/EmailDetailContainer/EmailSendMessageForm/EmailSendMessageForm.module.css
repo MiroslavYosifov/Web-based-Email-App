@@ -1,12 +1,12 @@
 .EmailSendMessageForm {
     position: relative;
     width: 100%;
-    background: white;
+    background: var(--site-color-basic-background);
     margin: 0 auto;
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 0.2em;
-    border: 1px solid lightgray;
+    border: 1px solid var(--site-color-border-basic);
 }
 
 .EmailSendMessageForm:hover {
@@ -20,7 +20,7 @@
 
 .EmailSendMessageForm p input {
     width: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid var(--site-color-border-basic);
     padding: 0.4em;
     border-radius: 0.2em;
    
@@ -35,16 +35,21 @@
     margin-left: 0.4em;
     border: none;
     cursor: pointer;
-    background: rgb(48, 105, 228);
+    background: var(--site-color-basic-details-background);
     border-radius: 0.2em;
-    color: white;
+    color: var(--text-color-fourth);
     font-size: 16px;
 }
 
+.EmailSendMessageForm form > div > div {
+    background: var(--site-color-basic-background);
+    padding: 0.4em;
+    border-radius: 0.3em;
+    border: 1px solid var(--site-color-border-basic);
+}
+
 .EmailSendMessageForm form > div > div > div {
-    background: white;
-    padding: 0.2em;
-    border: 1px solid lightgray;
+    margin-top: 0.2em;
 }
 
 .EmailSendMessageForm form > div > div > div > button {
@@ -52,30 +57,26 @@
     margin-left: 0.4em;
     border: none;
     cursor: pointer;
-    background: rgb(48, 105, 228);
+    background: var(--site-color-basic-details-background);
     border-radius: 0.2em;
-    color: white;
+    color: var(--text-color-fourth);
     font-size: 16px;
 }
 
 .EmailSendMessageForm form > div .Cancel,
 .EmailSendMessageForm form > div .Schedule {
-    background: rgb(163, 163, 163);
+    background: var(--site-color-secondary-details-background);
 }
 
 .EmailSendMessageForm form > div button:first-child {
     margin: 0;
 }
 
-.Calendar {
+.DateTimePickerWrapper {
     margin: 0;
-    position: absolute;
-    padding: 2em;
-    background: lightgray;
-    top: 84%; left: 0;
-    box-shadow: 0.1em 0.1em 0.4em 0.2em rgb(196, 196, 196);
+    top: 84%; left: 16%;
 }
 
-.Calendar div {
+.DateTimePickerWrapper div {
     margin: 0 auto;
 }

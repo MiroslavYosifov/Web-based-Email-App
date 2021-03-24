@@ -1,9 +1,8 @@
 .EmailContainerSidebar {
-    background: white;
-    /* background: blue; */
+    background: var(--site-color-basic-background);
     width: 10%;
     height: 94vh;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid var(--site-color-border-basic);
 }
 
 .EmailContainerSidebar nav {
@@ -22,26 +21,26 @@
 .EmailContainerSidebar nav ul a {
     display: block;
     width: 100%;
-    padding: 0.2em 2em;
-    color: black;
-    background: white;
+    padding: 0.2em 1em;
+    color: var(--text-color-basic);
+    background: var(--site-color-basic-background);
     font-size: 18px;
 }
 
 .EmailContainerSidebar nav ul li a:hover {
-    color: white;
-    background: gray;
+    color: var(--text-color-fourth);
+    background: rgb(196, 196, 196);
 }
 
 .EmailContainerSidebar nav ul li > .Active {
-    color: white;
-    background: gray;
+    color: var(--text-color-fourth);
+    background: rgb(160, 160, 160);
 }
 
 .NewMessageButton {
     display: block;
     width: 100%;
-    background: rgb(48, 105, 228);
+    background: var(--site-color-basic-details-background);
     height: 3em;
     padding-top: 0.5em;
     cursor: pointer;
@@ -50,6 +49,6 @@
 .NewMessageButton p {
     text-align: center;
     width: 100%;
-    color: white;
+    color: var(--text-color-fourth);
     font-size: 20px;
 }

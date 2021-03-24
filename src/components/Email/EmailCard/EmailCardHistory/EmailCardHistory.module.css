@@ -4,17 +4,13 @@
 
 .EmailCardHistory > header {
     padding: 0.4em;
-    border-top: 1px solid lightgray;
-}
-
-.EmailCardHistory ul {
-
+    border-top: 1px solid var(--site-color-border-basic);;
 }
 
 .EmailCardHistory ul li {
-    background: white;
+    background: var(--site-color-basic-background);
     margin-top: 0.6em;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--site-color-border-basic);;
     cursor: pointer;
 }
 
@@ -29,12 +25,12 @@
 .EmailCardHistory ul li section > header > p {
     margin-left: auto;
     font-style: italic;
-    color: gray;
+    color: var(--text-color-third);;
 }
 
 .EmailCardHistory ul li section header h6, 
 .EmailCardHistory ul li section > p {
-    color: gray;
+    color: var(--text-color-third);
 }
 
 .Disabled {

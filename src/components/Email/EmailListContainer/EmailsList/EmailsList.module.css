@@ -5,7 +5,7 @@
 
 .EmailsList header {
     padding: 0.4em 1em;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--site-color-border-basic);
 }
 
 .EmailsList header h5 {
@@ -18,11 +18,11 @@
 
 .EmailsList ul li {
     padding: 0.4em;
-    background: rgb(240, 240, 240);
-    border-bottom: 1px solid rgb(190, 190, 190);
+    background: var(--site-color-third-background);
+    border-bottom: 1px solid var(--site-color-border-basic);
 }
 
 .EmailsList ul li:hover {
     cursor: pointer;
-    background: rgb(200, 200, 200);
+    background: var(--site-hover-color-basic-backgorund);
 }

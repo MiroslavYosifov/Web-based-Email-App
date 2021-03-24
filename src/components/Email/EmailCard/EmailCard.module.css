@@ -4,4 +4,126 @@
   
     /* box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(190, 190, 190); */
     width: 100%;
+    padding: 0.4em;
+}
+
+.EmailCard .EmailCardDetailsIssue {
+
+}
+
+.EmailCard .EmailCardDetailsIssue span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.EmailCard .EmailCardDetailsIssue span i {
+    font-size: 12px;
+}
+
+.EmailCard .EmailCardDetailsIssue span p {
+    margin-left: 0.2em;
+}
+
+.EmailCardDetails {
+    width: 100%;
+}
+
+.EmailCardDetails section {
+    padding: 0 0.4em;
+    margin: 0.8em 0;
+}
+
+.EmailCardDetails > section > section {
+    font-size: 14px;
+    padding: 0.1em;
+}
+
+.EmailCardParticipantsWrapper {
+   
+}
+
+.EmailCardParticipantsWrapper section:nth-child(2) {
+    padding: 0.4em;
+}
+
+.EmailCardParticipantsWrapper section {
+    border-bottom: 1px solid lightgray;
+    /* background: rgb(240, 240, 240); */
+    margin: 0;
+}
+
+.EmailCardDetailsParticipants {
+    display: flex;
+    align-items: center;
+}
+
+.EmailCardDetailsParticipants h5 {
+    font-weight: bold;
+}
+
+.EmailCardDetailsParticipants > ul {
+    display: flex;
+    padding: 0.4em;
+}
+
+.EmailCardDetailsParticipants > ul > li {
+    margin-left: 0.4em;
+    padding: 0.2em 1em; 
+    background: rgb(240, 240, 240);
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.EmailCardDetailsParticipants ul li > p {
+    font-size: 16px;
+}
+
+.EmailCardDetailsTitle > h3,
+.EmailCardDetailsTitle > h4,
+.EmailCardDetailsTitle > h5,
+.EmailCardDetailsTitle > h6 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.EmailCardDetailsHeader {
+    display: flex;
+    align-items: center;
+}
+
+.EmailCardDetailsHeader > h3,
+.EmailCardDetailsHeader > h4,
+.EmailCardDetailsHeader > h5 {
+    font-weight: bold;
+
+}
+
+/* .EmailCardDetailsHeader > h5 {
+    font-size: 18px;
+} */
+
+.EmailCardDetailsHeader > p {
+    margin-left: auto;
+    font-style: italic;
+}
+
+.ReplyButton {
+    cursor: pointer;
+    padding: 0.4em 2em;
+    background: rgb(48, 105, 228);
+    border-radius: 0.3em;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    border: none;
+    /* border: 1px solid lightgray;
+    box-shadow: 0.1em 0.1em 0.2em 0.1em rgb(206, 206, 206); */
+}
+
+.SheduledDate {
+    color: rgb(23, 116, 223);
+    font-weight: bold;
 }

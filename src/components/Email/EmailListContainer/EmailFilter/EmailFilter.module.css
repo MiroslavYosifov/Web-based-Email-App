@@ -7,7 +7,6 @@
 }
 
 
-
 .EmailFilter span {
     padding-top: 0.6em;
     padding-left: 1em;
@@ -27,7 +26,9 @@
     height: 100%;
     border: 1px solid gray;
     padding-left: 1em;
+    cursor: pointer;
 }
+
 
 .EmailFilter select:focus {
     border: 1px solid gray;

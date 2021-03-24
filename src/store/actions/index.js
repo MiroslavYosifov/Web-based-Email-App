@@ -4,4 +4,7 @@ export {
 
 export {
     requestListEmails,
+    requestUpdateCurrentEmail,
+    changeFormStatus,
+    updateSearchParams
 } from './email/email';

@@ -1,0 +1,24 @@
+.DateTimePicker {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.DateTimePicker section {
+    padding-top: 0.2em;
+    width: 100%;
+}
+
+.DateTimePicker section span {
+    display: block;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    width: 3em;
+    font-size: 18px;
+}
+
+.DateTimePicker section select {
+    padding: 0.4em;
+    width: 5em;
+    cursor: pointer;
+}

@@ -1,0 +1,119 @@
+.EmailReplyMessageForm {
+    position: relative;
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 0.2em;
+    border: 1px solid lightgray;
+}
+
+.EmailReplyMessageForm:hover {
+    box-shadow: 0.1em 0.1em 0.4em 0.2em rgb(196, 196, 196);
+}
+
+.EmailReplyMessageForm section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+
+.EmailReplyMessageForm section input {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 0.4em;
+    border-radius: 0.2em;
+}
+
+.EmailReplyMessageForm section ul {
+    display: flex;
+}
+
+.EmailReplyMessageForm section ul li {
+    margin-right: 0.4em;
+    padding: 0.2em 1em; 
+    background: rgb(236, 236, 236);
+    border-radius: 0.2em;
+    cursor: pointer;
+    width: 13em;
+    text-align: center;
+}
+
+.EmailReplyMessageForm section ul li span {
+    font-size: 16px;
+}
+
+.EmailReplyMessageForm section ul li span i {
+    color: gray;
+}
+
+.EmailReplyMessageForm p {
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+
+.EmailReplyMessageForm p input {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 0.4em;
+    border-radius: 0.2em;
+}
+
+.EmailReplyMessageForm form > div {
+    margin-top: 1em;
+}
+
+.EmailReplyMessageForm form > div > button {
+    padding: 0.4em 0.6em;
+    margin-left: 0.4em;
+    border: none;
+    cursor: pointer;
+    background: rgb(48, 105, 228);
+    border-radius: 0.2em;
+    color: white;
+    font-size: 16px;
+}
+
+.EmailReplyMessageForm form > div > div {
+    background: white;
+    padding: 0.4em;
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+}
+
+.EmailReplyMessageForm form > div > div > div {
+    margin-top: 0.2em;
+}
+
+.EmailReplyMessageForm form > div > div > div > button {
+    padding: 0.4em 0.6em;
+    margin-left: 0.4em;
+    border: none;
+    cursor: pointer;
+    background: rgb(48, 105, 228);
+    border-radius: 0.2em;
+    color: white;
+    font-size: 16px;
+}
+
+.EmailReplyMessageForm form > div .Cancel,
+.EmailReplyMessageForm form > div .Schedule {
+    background: rgb(163, 163, 163);
+}
+
+.EmailReplyMessageForm form > div button:first-child {
+    margin: 0;
+}
+
+.DateTimePickerWrapper {
+    margin: 0;
+    /* position: absolute; */
+    background: lightgray;
+    top: 84%; left: 16%;
+}
+
+.DateTimePickerWrapper div {
+    margin: 0 auto;
+}

@@ -6,7 +6,7 @@
    overflow-y: scroll;
 }
 
-.EmailDetailContainer ul {
+/* .EmailDetailContainer ul {
 
 }
 
@@ -14,5 +14,13 @@
    background: white;
    border: 1px solid lightgray;
    padding: 0.4em;
+} */
+
+.EmailMessageContainer {
+   padding: 1em;
+   border-radius: 0.3em;
+   border: 1px solid lightgray;
+   /* background: lightgray; */
+   background: white;
 }
 

@@ -33,6 +33,11 @@
     background: gray;
 }
 
+.EmailContainerSidebar nav ul li > .Active {
+    color: white;
+    background: gray;
+}
+
 .NewMessageButton {
     display: block;
     width: 100%;

@@ -34,6 +34,13 @@ export const removeEmail = (emailId) => {
     }
 }
 
+export const updateCurrentEmail = (email) => {
+    return {
+        type: actionTypes.EMAIL_CURRENT_SELECTED_UPDATE,
+        email: email
+    }
+}
+
 // ********************************************* //
 
 export const requestListEmails = (criterion) => {
@@ -41,3 +48,29 @@ export const requestListEmails = (criterion) => {
         dispatch(listEmails(criterion))
     }
 }
+
+export const requestUpdateCurrentEmail = (email) => {
+    return dispatch => {
+        dispatch(updateCurrentEmail(email))
+    }
+}
+
+export const changeFormStatus = (isShowedSendMessageForm) => {
+    return dispatch => {
+        dispatch({
+            type: actionTypes.EMAIL_SEND_MESSAGE_FORM_STATUS_UPDATE,
+            isShowedSendMessageForm: isShowedSendMessageForm,
+        });
+    }
+}
+
+export const updateSearchParams = (params) => {
+    return dispatch => {
+        dispatch({
+            type: actionTypes.EMAIL_UPDATE_SEARCH_PARAMS,
+            searchParams: params,
+        });
+    }
+}
+
+

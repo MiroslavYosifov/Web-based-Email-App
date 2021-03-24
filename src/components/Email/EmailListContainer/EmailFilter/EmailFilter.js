@@ -4,21 +4,22 @@ import classes from './EmailFilter.module.css';
 import { connect } from 'react-redux';
 
 function EmailFilter (props) { 
+
+    function handleDowntimeOptions (event) {
+        const downtime = event.target.value;
+        props.updateFilterOptions(downtime);
+    }
+
     return(
         <div className={classes.EmailFilter}>
             <span> Downtime </span>
-            <select id="downtime">
+            <select onChange={(event) => handleDowntimeOptions(event)} id="downtime">
                 <option value="all">All</option>
                 <option value="host">Host</option>
                 <option value="database">Database</option>
             </select>
-            <span> Data </span>
-            <select id="downtime">
-                <option value="all">All</option>
-                <option value="host">Host</option>
-                <option value="database">Database</option>
-            </select>
-        </div>)
+        </div>
+    )
 }
 
 export default EmailFilter;

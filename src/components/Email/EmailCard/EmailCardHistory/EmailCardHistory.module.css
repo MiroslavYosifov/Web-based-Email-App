@@ -1,0 +1,42 @@
+.EmailCardHistory {
+    
+}
+
+.EmailCardHistory > header {
+    padding: 0.4em;
+    border-top: 1px solid lightgray;
+}
+
+.EmailCardHistory ul {
+
+}
+
+.EmailCardHistory ul li {
+    background: white;
+    margin-top: 0.6em;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.EmailCardHistory ul li section header {
+    display: flex;
+}
+
+.EmailCardHistory ul li section header h6 {
+    font-weight: bold;
+}
+
+.EmailCardHistory ul li section > header > p {
+    margin-left: auto;
+    font-style: italic;
+    color: gray;
+}
+
+.EmailCardHistory ul li section header h6, 
+.EmailCardHistory ul li section > p {
+    color: gray;
+}
+
+.Disabled {
+    display: none;
+}

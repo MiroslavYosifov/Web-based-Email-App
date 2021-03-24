@@ -3,6 +3,15 @@
     min-width: 100%;
 }
 
+.EmailsList header {
+    padding: 0.4em 1em;
+    border-bottom: 1px solid lightgray;
+}
+
+.EmailsList header h5 {
+    font-weight: bold;
+}
+
 .EmailsList ul {
 
 }

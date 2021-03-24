@@ -18,8 +18,9 @@ function EmailContainerHeader(props) {
                     <li><span><i class="fas fa-sign-out-alt"></i></span></li>
                 </ul>
             </nav>
-            
         </div>)
 }
+
+
 
 export default EmailContainerHeader;

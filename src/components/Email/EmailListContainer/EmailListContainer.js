@@ -6,24 +6,26 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { requestListEmails } from '../../../store/actions/index';
 
-import EmailsList from '../EmailsList/EmailsList';
-import EmailFilter from '../EmailFilter/EmailFilter';
+import EmailsList from './EmailsList/EmailsList';
+import EmailsFilter from './EmailFilter/EmailFilter';
 
 function EmailListContainer (props) { 
 
-    useEffect(() => {
-        console.log(props);
-    });
+    const [filter, setFilterOptions] = useState({ downtime: '', isReset: false });
+
+    function updateFilterOptions(value) {
+        setFilterOptions({ downtime: value });
+    }
 
     return(
         <div className={classes.EmailListContainer}>
             <main>
-                <EmailFilter />
+                <EmailsFilter updateFilterOptions={updateFilterOptions} />
                 <div className={classes.ListEmails}>
-                    <Switch>myprofile
-                        <Route path="/inbox" render={() => <EmailsList emails={props.emails} />}></Route>
-                        <Route path="/sent" component={EmailsList}></Route>
-                        <Route path="/scheduled" component={EmailsList}></Route>
+                    <Switch>
+                        <Route path="/inbox" render={() => <EmailsList status="inbox" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
+                        <Route path="/sent" render={() => <EmailsList status="sent" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
+                        <Route path="/scheduled" render={() => <EmailsList status="scheduled" filterDowntime={filter.downtime} emails={props.emails} />}></Route>
                         <Route render={() => <h1>Not found</h1>} ></Route>
                     </Switch>
                 </div>
